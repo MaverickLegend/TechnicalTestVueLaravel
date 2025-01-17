@@ -1,19 +1,19 @@
 <template>
-  <main class="container mx-auto mt-4 p-4 bg-white rounded shadow-md">
+  <main class="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
     <div v-if="isAuthenticated" class="space-y-4">
-      <div>
+      <div class="flex flex-col sm:flex-row sm:justify-between">
         <label class="block text-gray-700">Nombre:</label>
         <p class="text-gray-900">{{ user?.first_name }}</p>
       </div>
-      <div>
+      <div class="flex flex-col sm:flex-row sm:justify-between">
         <label class="block text-gray-700">Apellido:</label>
         <p class="text-gray-900">{{ user?.last_name }}</p>
       </div>
-      <div>
+      <div class="flex flex-col sm:flex-row sm:justify-between">
         <label class="block text-gray-700">Teléfono:</label>
         <p class="text-gray-900">{{ user?.phone_number }}</p>
       </div>
-      <div>
+      <div class="flex flex-col sm:flex-row sm:justify-between">
         <label class="block text-gray-700">Correo Electrónico:</label>
         <p class="text-gray-900">{{ user?.email }}</p>
       </div>

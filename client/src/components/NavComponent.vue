@@ -1,8 +1,9 @@
 <template>
   <nav class="bg-gray-800 p-4">
     <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-white text-xl font-semibold">Bienvenid@ a tu perfil</h1>
       <button v-if="isAuthenticated" @click="logout"
-        class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+        class="ml-auto flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
